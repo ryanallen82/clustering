@@ -40,7 +40,7 @@ for feedurl in feedlist:
 wordlist=[]
 for w,bc in apcount.items():
     frac=float(bc)/len(feedlist)
-    if frac>0.2 and frac<0.3: wordlist.append(w)
+    if frac>0.5 and frac<0.8: wordlist.append(w)
 
 out=file('blogdata.txt','w')
 out.write('Blog')

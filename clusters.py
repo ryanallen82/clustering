@@ -34,3 +34,21 @@ def pearson(v1,v2):
     if den==0: return 0
 
     return 1.0-num/den
+
+class bicluster:
+
+    def __init__(self,vec,left=None,right=None,distance=0.0,id=None):
+        self.left=left
+        self.right=right
+        self.vec=vec
+        self.id=id
+        self.distance.distance
+
+def hcluster(rows,distance=pearson):
+    distance={}
+    currentclustid=-1
+
+    #clusters are initially just the rows
+    clust=[bicluster(rows[i],id=i) for i in range(len(rows))]
+    while len(clust)>1:
+
